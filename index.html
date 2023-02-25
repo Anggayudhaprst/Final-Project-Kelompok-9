@@ -6,6 +6,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>BookBuzz</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <style type="text/tailwindcss">
+        #shipping-desc {
+            font-family: 'Inter', sans-serif;
+        }
+        #subs-w {
+            font-family: 'Inter', sans-serif;
+        }
+
+    </style>
 </head>
 <body class="max-w-7xl mx-auto">
     <!---Navbar--->
@@ -36,9 +46,64 @@
         <!--- Product Widge END--->
 
     <!--- Shiping Desc Wrapper --->
+     <div class=" max-w-7xl mx-auto px-[100px] py-[50px] border-b-2" id="shipping-desc">
+        <div class="flex flex-wrap  xl:justify-between text-center sm:justify-center ">
+            <div class="text-xs md:py-[50px] py-[30px] sm:px-[20px] xl:px-0 ">
+                <div class="mb-[30px] flex items-center justify-center max-w">
+                    <img src="/Assets/001-shipped_small.webp" >
+                </div>
+                <h1 class="text-black font-bold mb-[24px]">
+                    FREE SHIPPING WORLDWIDE
+                </h1>
+                <p class="text-[#929292]">
+                    We offer free shipping via Standard Shipping on orders over <br> $200.00
+                </p>
+            </div>
+            <div class="text-xs md:py-[50px] py-[30px] sm:px-[20px] xl:px-0">
+                <div class="mb-[30px] flex items-center justify-center max-w">
+                    <img src="/Assets/002-money-back_small.webp" >
+                </div>
+                <h1 class="text-black font-bold mb-[24px]">
+                    FREE SHIPPING WORLDWIDE
+                </h1>
+                <p class="text-[#929292]">
+                    We offer free shipping via Standard Shipping on orders over <br> $200.00
+                </p>
+            </div>
+            <div class="text-xs md:py-[50px] py-[30px] sm:px-[20px] xl:px-0">
+                <div class="mb-[30px] flex items-center justify-center max-w">
+                    <img src="/Assets/003-support_small.webp">
+                </div>
+                <h1 class="text-black font-bold mb-[24px]">
+                    FREE SHIPPING WORLDWIDE
+                </h1>
+                <p class="text-[#929292]">
+                    We offer free shipping via Standard Shipping on orders over <br>$200.00
+                </p>
+            </div>
+        </div>
+    </div>
         <!--- Shiping Desc Wrapper END --->
 
     <!--- Subscribe Wrapper --->
+     <div class="max-w-7xl mx-auto px-[100px] py-[100px]" id="subs-w">
+        <div class="text-center">
+            <p class="text-[14px] mb-[15px] text-[#929292]">Special Offers For Subscribe</p>
+            <p class="text-[32px] font-semibold mb-[20px]">10% Member Discount</p>
+            <p class="text-[14px] mb-[50px] text-[#929292]">Subscribe to our newsletters now and stay up to date with new collections.</p>
+        </div>
+        <!--- subs form --->
+        <div class="flex items-center justify-center max-w">    
+            <form form class=" max-w-xl">
+                <div class="flex border border-teal-500">
+                    <input class=" py-4  bg-transparent  w-full text-gray-700  px-4 md:px-24 sm:px-10  focus:outline-none" type="text" placeholder="Your email address" aria-label="Full name">
+                    <button class="flex-shrink-0 bg-teal-300 hover: border-teal-300 hover:border-teal-500 text-sm border-4 text-black py-1 px-8 font-medium" type="button">
+                    Sign Up
+                    </button>
+                </div>
+            </form>
+        </div>
+    </div>
         <!--- Subscribe Wrapper END --->
 
     <!--- Footer --->
