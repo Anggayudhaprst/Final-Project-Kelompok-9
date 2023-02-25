@@ -1,1 +1,1 @@
-Tolong dibrance ya updatenya
+Tolong dibranch ya updatenya sesuai namanya masing masing
