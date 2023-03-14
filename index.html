@@ -6,7 +6,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>BookBuzz</title>
+    <link href="/dist/output.css" rel="stylesheet">
     <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/feather-icons"></script>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap"
         rel="stylesheet">
     <style type="text/tailwindcss">
@@ -20,51 +22,29 @@
     </style>
 </head>
 
-<body class="max-w-7xl mx-auto">
+<body class="max-w-7xl mx-auto h-[100vh]">
     <!---Navbar--->
-    <section class="top-0 w-full z-[10]">
-        <div class="static">
-            <!-- ada garis tepi pada layout belum bisa fix di reso Laptop-L(1440x980) dan 4K (2560x1764) -->
-            <div class="relative flex container items-center mx-auto px-4 py-4 bg-[#f6f6f6]">
-                <div class="relative container flex w-1/4 justify-between">
-                    <span>
-                    </span>
-                </div>
-                <div class="w-2/4 flex self-center relative lg:left-[190px] md:left-[80px]">
-                    <div
-                        class="md:w-[45px] md:h-[45px] lg:w-[90px] lg:h-[90px] w-[35px] h-[35px] pt-[10px] rounded-full bg-gradient-to-bl from-[#6a79ff] to-[#fb4e97] drop-shadow-[0_1px_3px_rgba(16,24,40,0.1)]">
-                        <div class="lg:pt-6 lg:pl-9 pl-6">
-                            <span
-                                class="font-poppins font-bold lg:text-[32px] text-[24px] lg:leading-[20px] leading-[10px] md:leading-[24px] tracking-[.075em] text-[#131246]  ">
-                                BOOKBUZZ
-                            </span>
-                        </div>
-                    </div>
-                </div>
-                <div class="w-1/4 flex justify-end gap-3 h-[25px]">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                        class="bi bi-search md:block hidden " viewBox="0 0 16 16">
-                        <path
-                            d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z" />
-                    </svg>
-                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                        class="bi bi-cart w-[16px] h-[16px] md:block hidden" viewBox="0 0 16 16">
-                        <path
-                            d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l1.313 7h8.17l1.313-7H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z" />
-                    </svg>
-                    <svg xmlns="http://www.w3.org/2000/svg" width="21" height="21" viewBox="0 0 21 21" class="">
-                        <path
-                            d="M 2 5 L 2 7 L 22 7 L 22 5 L 2 5 z M 2 11 L 2 13 L 22 13 L 22 11 L 2 11 z M 2 17 L 2 19 L 22 19 L 22 17 L 2 17 z">
-                        </path>
-                    </svg>
-                </div>
-            </div>
+    <section class="flex h-[100px] justify-between items-center p-[1.4rem] top-0 left-0 right-0 z-[9999]">
+        <div></div>
+        <div
+            class="flex w-[90px] h-[90px] pl-[20px] rounded-full bg-gradient-to-bl from-[#6a79ff] to-[#fb4e97] drop-shadow-[0_1px_3px_rgba(16,24,40,0.1)] items-center mx-auto">
+            <div
+                class="relative items-center self-center font-[Poppins] font-bold text-[32px] leading-[48px] tracking-[.075em]">
+                BOOKBUZZ</div>
+        </div>
+        <div class="flex gap-[30px] ">
+            <a href="#" id="search" class="invisible sm:visible">
+                <i data-feather="search"></i></a>
+            <a href="#" id="shopping-cart" class="invisible sm:visible">
+                <i data-feather="shopping-cart"></i></a>
+            <a href="#" id="hamburger-menu">
+                <i data-feather="menu"></i></a>
         </div>
     </section>
     <!---Navbar END--->
 
     <!--- Menu Bar --->
-    <section class="flex items-center  relative justify-center ">
+    <section class="flex items-center relative justify-center ">
         <button class="relative">
             <ul class="flex items-center relative text-[#131246] gap-5 font-poppins font-medium text-xs leading-6">
                 <li><a href="index.html">Home</a></li>
@@ -735,6 +715,9 @@
 
     <!-- script -->
     <script src="js/script.js"></script>
+    <script>
+        feather.replace()
+    </script>
 </body>
 
 </html>
